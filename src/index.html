@@ -4,13 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>To Do List</title>
   </head>
   <body>
     <div class="main">
-      <button class="minus">-</button>
-      <span>100</span>
-      <button class="plus">+</button>
+      <h2>To Do List</h2>
+      <div class="inputf">
+        <input type="text" class="inputs" placeholder="Please Tasks">
+      </div>
+      <div class="buttons">
+        <button class="plus">Add</button>
+      </div>
+      <div class="display">
+      <div class="tasks">
+          <p class="todo">My First Task</p>
+          <!-- <p class="done">My First Task</p> -->
+      </div>
+      <div class="del">
+        <button class="cross"  id="delete">&cross;</button>
+        <button class="cross"  id="delete">&check;</button>
+      </div>
+      </div>
     </div>
   </body>
 </html>
