@@ -1,5 +1,6 @@
 const tasks = document.querySelector('.display');
 const input = document.querySelector('.inputs');
+const errorMsg = document.querySelector('.check');
 
 function add() {
   if (input.value.trim() !== '') {
@@ -16,6 +17,8 @@ function add() {
         `;
     tasks.appendChild(newItem);
     input.value = '';
+  } else {
+    errorMsg.innerHTML = 'please input a task';
   }
 }
 
